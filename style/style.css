@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont-header {
+    padding: 40px;
+    background-image: url("img/fondo1.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 95px;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    color: #eef094ef;
+    text-shadow: #b22025ae 10px -2px;
+    position: relative;
+    letter-spacing: 30px;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes jump {
+    50% {
+      top: 10px;
+    }
+}
+
+span {
+    margin: 0 60px;
+}
+
+.cont-main {
+    margin: 0 auto;
+    background: #272b33;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 0 15px;
+    border: 2px black solid;
+    border-radius: 15px;
+    color: white;
+    background-color: #3c3e44;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.name {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+    height: 8%;
+}
+
+.character-img {
+    width: 230px;
+    margin: 25px;
+    border-radius: 40%;
+    border: 3px black solid;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 45%;
+}
+
+.info-ch {
+    font-size: 18px;
+    margin: 5px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+footer {
+    padding-top: 180px;
+    background-image: url("https://www.xtrafondos.com/wallpapers/rick-y-morty-escapando-de-portal-9235.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.github-link{
+    font-size: 25px;
+    position: absolute;
+    left: 50px;
+    color: white;
+    margin: 10px;
+    background-color: #272b33;
+    padding: 3px 5px;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+
+.email-link {
+    font-size: 25px;
+    position: absolute;
+    left: 150px;
+    color: white;
+    margin: 10px;
+    background-color: #272b33;
+    padding: 3px 5px;
+    border: black solid 1px;
+    border-radius: 3px;
+}
+
+.text-footer{
+    width: 30%;
+    padding: 0.5%;
+    background-color: #272b33;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 15px;
+    color: white;
+    border: black solid 1.5px;
+    border-radius: 3px;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+
+@media (max-width: 880px){
+    .cont-header{
+        padding: 1px;
+    }
+
+    h1 {
+        font-size: 65px;
+        text-shadow: #b22025ae 5px -1px;
+    }
+
+    span {
+        margin: 0;
+    }
+    .container {
+        justify-content: center;
+    }
+
+     .tarjeta {
+        margin: 20px 10px;
+        padding: 0 10px;
+        width: 350px;
+    }
+
+    .character-img {
+        margin: 10px;
+    }
+    
+    .github-link{
+        font-size: 15px;
+        left: 0;
+        margin-bottom: 100px;
+    }
+
+    .email-link{
+        font-size: 15px;
+        left: 70px;
+        margin-bottom: 100px;
+    }
+
+    .text-footer {
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px){
+    .cont-header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    span {
+        margin: 0;
+    }
+
+    .container {
+        justify-content: left;
+        width: 95%;
+        margin-left: 5%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+    }
+
+    .tarjeta {
+        margin: 4%;
+        height: 500px;
+    }
+
+    .name {
+        height: 6%;
+        font-size: 18px;
+    }
+
+    .character-img {
+        width: 140px;
+        margin: 10px;
+    }
+
+    .info-ch {
+        font-size: 13px;
+    }
+
+    .github-link {
+        margin-bottom: 65px;
+        left: 2px;
+    }
+
+    .email-link {
+        margin-bottom: 65px;
+        left: 50px;
+    }
+
+    .text-footer {
+        width: 90%;
+        letter-spacing: 5px;
+    }
+
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+
+    footer {
+       padding-top: 120px;
+    }
+    
+}
+
+
